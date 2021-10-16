@@ -1,14 +1,12 @@
 spring:
   datasource:
-    driverClassName: org.postgresql.Driver
+    driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/spring-boot-paging-sorting
     username: admin
     password: Passw0rd
 
   jpa:
-    properties:
-      hibernate:
-        database-platform: org.hibernate.dialect.PostgreSQL94Dialect
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-        ddl-auto: update
-        show-sql: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
