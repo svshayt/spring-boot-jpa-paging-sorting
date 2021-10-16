@@ -11,3 +11,4 @@ spring:
         database-platform: org.hibernate.dialect.PostgreSQL94Dialect
         dialect: org.hibernate.dialect.PostgreSQLDialect
         ddl-auto: update
+        show-sql: true
