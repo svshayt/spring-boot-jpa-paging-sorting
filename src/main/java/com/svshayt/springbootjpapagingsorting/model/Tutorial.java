@@ -15,11 +15,17 @@ import javax.persistence.*;
 public class Tutorial {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private long id;
 
     private String title;
 
     private String description;
 
-    private Boolean published;
+    private boolean published;
+
+    public Tutorial(String title, String description, boolean published) {
+        this.title = title;
+        this.description = description;
+        this.published = published;
+    }
 }
